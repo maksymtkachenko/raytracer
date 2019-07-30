@@ -3,7 +3,7 @@
 
 class vec3 {
 public:
-	vec3() {}
+	vec3();
 	vec3(float e0, float e1, float e2);
 	inline float x() const { return e[0]; }
 	inline float y() const { return e[1]; }

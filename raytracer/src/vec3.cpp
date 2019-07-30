@@ -1,9 +1,3 @@
-/*
- * vec3.cpp
- *
- *  Created on: Jul 29, 2019
- *      Author: mtkachenko
- */
 
 #include "vec3.h"
 

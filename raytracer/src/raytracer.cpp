@@ -10,6 +10,6 @@
 using namespace std;
 
 int main() {
-	cout << "Hello This is my first project created from Eclipse !!!" << endl; // prints !!!Hello World!!!
+	cout << "Hello This is my first project created from Eclipse on mac !!!" << endl; // prints !!!Hello World!!!
 	return 0;
 }
