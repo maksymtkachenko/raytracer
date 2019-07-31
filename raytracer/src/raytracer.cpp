@@ -4,8 +4,8 @@
 
 vec3 color(const ray& r) {
 	vec3 unit_direction = unit_vector(r.direction());
-
-	return unit_direction;
+	float t = 0.5*(unit_direction.y() + 1.0);
+	return (1.0-t)*vec3(1.0, 1.0, 1.0) + t*vec3(0.5, 0.7, 1.0);
 }
 
 
@@ -29,11 +29,16 @@ int main() {
 			  float v = float(j) / float(ny);
 			  ray r(origin, lower_left_corner + u*horizontal + v*vertical);
 			  vec3 col = color(r);
+			  int ir = int(255.99 * col[0]);
+			  int ig = int(255.99 * col[1]);
+			  int ib = int(255.99 * col[2]);
+
+			  imageFile << ir << " " << ig << " " << ib << "\n";
 		  }
 	  }
 
 	}
-
+	imageFile.close();
 
 
 	return 0;
