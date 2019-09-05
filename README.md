@@ -1,1 +1,3 @@
 # raytracer
+
+![](goal.jpg)
