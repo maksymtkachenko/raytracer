@@ -10,7 +10,8 @@ float hit_sphere(const vec3& center, float radius, const ray& r) {
 	float discriminant = b*b - 4*a*c;
 	if (discriminant < 0) {
 		return -1;
-	} else {
+	}
+	else {
 		return (-b-sqrt(discriminant))/(2.0 * a);
 	}
 
